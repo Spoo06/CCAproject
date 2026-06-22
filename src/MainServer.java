@@ -54,6 +54,8 @@ public class MainServer {
                 String r = ok
                         ? "REGISTERED"
                         : "USER EXISTS";
+                ex.getResponseHeaders()
+    .add("Access-Control-Allow-Origin", "*");
 
                 ex.sendResponseHeaders(200, r.length());
 
@@ -89,6 +91,8 @@ public class MainServer {
 
                 String r =
                         ok ? "SUCCESS" : "FAIL";
+                ex.getResponseHeaders()
+    .add("Access-Control-Allow-Origin", "*");
 
                 ex.sendResponseHeaders(200, r.length());
 

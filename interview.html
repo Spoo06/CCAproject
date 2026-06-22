@@ -1,22 +1,122 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Interview Questions</title>
 
-    <link rel="stylesheet" href="style.css">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>AI Interview Engine</title>
+
+    <link rel="stylesheet" href="interview.css">
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="sidebar">
 
-    <h1>AI Interview Questions</h1>
+    <div class="logo-area">
 
-    <div id="questions"></div>
+        <h1>🚀 CIP</h1>
+
+        <p>Career Intelligence</p>
+
+    </div>
+
+    <nav>
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+
+        <a href="upload.html">📄 Upload Resume</a>
+
+        <a href="interview.html">🎤 Interview AI</a>
+
+        <a href="heatmap.html">🧠 Skill Heatmap</a>
+
+        <a href="assistant.html">🤖 AI Assistant</a>
+
+    </nav>
 
 </div>
 
-<script src="script.js"></script>
+<div class="main-content">
+
+    <div class="interview-wrapper">
+
+        <div class="hero-card">
+
+            <h1>🤖 AI Technical Interview Engine</h1>
+
+            <p>Adaptive Candidate Assessment System</p>
+
+            <span>Role Detected : Java Backend Developer</span>
+
+        </div>
+
+
+        <div class="question-section">
+
+            <h2 id="questionCounter">
+
+                Question 1 / 5
+
+            </h2>
+
+            <div id="questionText" class="question-box">
+
+            </div>
+
+
+            <div id="optionsContainer">
+
+            </div>
+
+
+            <button onclick="submitAnswer()">
+
+                Submit Answer
+
+            </button>
+
+        </div>
+
+
+        <div class="analytics-section">
+
+            <h3>AI Performance Analytics</h3>
+
+            <div class="progress-track">
+
+                <div id="progressFill">
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <h3 id="scoreText">
+
+                Technical Score : 0
+
+            </h3>
+
+            <p id="analysisText">
+
+                AI Analysis : Awaiting candidate response...
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="interview.js"></script>
+
+<script type="module" src="interview-cloud.js"></script>
 
 </body>
+
 </html>

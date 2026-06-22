@@ -1,0 +1,116 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top left,#3b1d74,transparent 30%), radial-gradient(circle at bottom right,#0f5cff,transparent 30%), #070b1a;
+    color:white;
+    display:flex;
+}
+
+.sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#040b25;
+    padding:30px 20px;
+    box-sizing:border-box;
+}
+
+.logo-area h1{
+    margin:0;
+    font-size:40px;
+}
+
+.logo-area p{
+    opacity:0.8;
+}
+
+nav{
+    margin-top:40px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    padding:20px;
+    background:rgba(255,255,255,0.05);
+    border-radius:20px;
+}
+
+.main-content{
+    flex:1;
+    padding:40px;
+}
+
+.interview-wrapper{
+    max-width:900px;
+}
+
+.hero-card{
+    background:rgba(255,255,255,0.04);
+    padding:30px;
+    border-radius:25px;
+    margin-bottom:30px;
+}
+
+.hero-card h1{
+    margin:0;
+    font-size:42px;
+}
+
+.question-section{
+    background:rgba(255,255,255,0.04);
+    padding:30px;
+    border-radius:25px;
+    margin-bottom:30px;
+}
+
+.question-box{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.option{
+    background:#151d45;
+    padding:18px;
+    margin:12px 0;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+.option:hover{
+    background:#264cff;
+}
+
+button{
+    margin-top:20px;
+    padding:18px;
+    width:250px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    color:white;
+    font-size:18px;
+    background:linear-gradient(90deg,#0059ff,#7d2cff);
+}
+
+.analytics-section{
+    background:rgba(255,255,255,0.04);
+    padding:30px;
+    border-radius:25px;
+}
+
+.progress-track{
+    height:18px;
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+#progressFill{
+    width:0%;
+    height:100%;
+    background:linear-gradient(90deg,#00d4ff,#7a00ff);
+    transition:0.5s;
+}
